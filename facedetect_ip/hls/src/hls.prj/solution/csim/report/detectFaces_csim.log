@@ -1,0 +1,37 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+make[1]: Entering directory '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src/hls.prj/solution/csim/build'
+   Compiling ../../../../image.cpp in debug mode
+   Compiling ../../../../main.cpp in debug mode
+   Compiling ../../../../haar.cpp in debug mode
+   Generating csim.exe
+make[1]: Leaving directory '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src/hls.prj/solution/csim/build'
+-- entering main function --
+-- loading image --
+-- detecting faces --
+
+result_size = 18
+ [Test Bench (main) ] detected rects: 237 222 124 124
+ [Test Bench (main) ] detected rects: 243 222 124 124
+ [Test Bench (main) ] detected rects: 217 204 149 149
+ [Test Bench (main) ] detected rects: 223 204 149 149
+ [Test Bench (main) ] detected rects: 229 204 149 149
+ [Test Bench (main) ] detected rects: 223 211 149 149
+ [Test Bench (main) ] detected rects: 208 186 178 178
+ [Test Bench (main) ] detected rects: 193 193 178 178
+ [Test Bench (main) ] detected rects: 201 193 178 178
+ [Test Bench (main) ] detected rects: 208 193 178 178
+ [Test Bench (main) ] detected rects: 193 201 178 178
+ [Test Bench (main) ] detected rects: 178 178 214 214
+ [Test Bench (main) ] detected rects: 187 178 214 214
+ [Test Bench (main) ] detected rects: 196 178 214 214
+ [Test Bench (main) ] detected rects: 205 178 214 214
+ [Test Bench (main) ] detected rects: 187 187 214 214
+ [Test Bench (main) ] detected rects: 196 187 214 214
+ [Test Bench (main) ] detected rects: 205 187 214 214
+-- saving output image [Start] --
+
+-- saving output image [Done] --
+DURATION: 5.773598
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

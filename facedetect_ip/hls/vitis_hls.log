@@ -1,0 +1,52 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+  **** SW Build 5238294 on Nov  8 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Jul  6 23:31:39 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'aanout' on host 'ANV-15.localdomain' (Linux_x86_64 version 6.6.87.2-microsoft-standard-WSL2) on Sun Jul 06 23:31:40 -03 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: source run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset hls.prj 
+INFO: [HLS 200-10] Opening and resetting project '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj'.
+INFO: [HLS 200-1510] Running: set_top detectFaces 
+INFO: [HLS 200-1510] Running: add_files ./src_parallel/haar.cpp 
+INFO: [HLS 200-10] Adding design file './src_parallel/haar.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./src_parallel/main.cpp 
+INFO: [HLS 200-10] Adding test bench file './src_parallel/main.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ./src_parallel/image.cpp 
+INFO: [HLS 200-10] Adding test bench file './src_parallel/image.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: Iniciando a Síntese C...
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 312.426 MB.
+INFO: [HLS 200-10] Analyzing design file 'src_parallel/haar.cpp' ... 
+WARNING: [HLS 207-5540] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead (src_parallel/haar.cpp:935:23)
+WARNING: [HLS 207-5292] unused parameter 'pt' (src_parallel/haar.cpp:3023:11)
+WARNING: [HLS 207-5292] unused parameter 'w_id' (src_parallel/haar.cpp:3291:7)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.26 seconds. CPU system time: 0.63 seconds. Elapsed time: 5.27 seconds; current allocated memory: 316.133 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 29,486 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 56,859 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26,323 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26,115 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,522 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 26,887 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,973 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,973 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 24,973 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/syn/report/csynth_design_size.rpt

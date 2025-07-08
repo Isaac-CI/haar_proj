@@ -1,0 +1,50 @@
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:2264:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:2264:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:2278:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:2278:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:2292:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:2292:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:3926:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:3926:7: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:115480:3: warning: Added loop label VITIS_LOOP_1019_1:   [xilinx-label-all-loops]
+  for (int i = 0; i < 12; i ++ )
+  ^~~
+  VITIS_LOOP_1019_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:115480:3: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117238:5: warning: Added loop label VITIS_LOOP_2773_1:   [xilinx-label-all-loops]
+    for( j = 0; j < 320; j++){
+    ^~~
+    VITIS_LOOP_2773_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117238:5: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117243:7: warning: Added loop label VITIS_LOOP_2778_2:   [xilinx-label-all-loops]
+      for ( i = 0; i < 100; i++){
+      ^~~
+      VITIS_LOOP_2778_2: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117243:7: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117304:4: warning: Added loop label VITIS_LOOP_2839_3:   [xilinx-label-all-loops]
+   for ( i = 0; i < 100; i++){
+   ^~~
+   VITIS_LOOP_2839_3: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117304:4: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117768:4: warning: Added loop label VITIS_LOOP_3259_1:   [xilinx-label-all-loops]
+   for ( k = 0; k < 12; k++ ){
+   ^~~
+   VITIS_LOOP_3259_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117768:4: note: FIX-IT applied suggested code changes
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117895:3: warning: Added loop label VITIS_LOOP_3366_1:   [xilinx-label-all-loops]
+  for ( i = 0 ; i < (32 >> 1) ; i++ )
+  ^~~
+  VITIS_LOOP_3366_1: 
+/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/hls.prj/solution1/.autopilot/db/haar.pp.0.cpp:117895:3: note: FIX-IT applied suggested code changes

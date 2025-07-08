@@ -1,0 +1,72 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.2 (64-bit)
+  **** SW Build 5238294 on Nov  8 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Jul  6 23:40:37 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis/2024.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'aanout' on host 'ANV-15.localdomain' (Linux_x86_64 version 6.6.87.2-microsoft-standard-WSL2) on Sun Jul 06 23:40:37 -03 2025
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'csim.tcl'
+INFO: [HLS 200-1510] Running: source csim.tcl
+INFO: [HLS 200-1510] Running: open_project hls.prj -reset 
+INFO: [HLS 200-10] Opening and resetting project '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src/hls.prj'.
+INFO: [HLS 200-1510] Running: set_top detectFaces 
+INFO: [HLS 200-1510] Running: add_files haar.cpp 
+INFO: [HLS 200-10] Adding design file 'haar.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'main.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb image.cpp 
+INFO: [HLS 200-10] Adding test bench file 'image.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src/hls.prj/solution'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+INFO: [HLS 200-1510] Running: config_rtl -reset state 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make[1]: Entering directory '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src/hls.prj/solution/csim/build'
+   Compiling ../../../../image.cpp in debug mode
+   Compiling ../../../../main.cpp in debug mode
+   Compiling ../../../../haar.cpp in debug mode
+   Generating csim.exe
+make[1]: Leaving directory '/home/aanout/Documents/mestrado/facedetect_fpga_project/hls/src/hls.prj/solution/csim/build'
+-- entering main function --
+-- loading image --
+-- detecting faces --
+
+result_size = 18
+ [Test Bench (main) ] detected rects: 237 222 124 124
+ [Test Bench (main) ] detected rects: 243 222 124 124
+ [Test Bench (main) ] detected rects: 217 204 149 149
+ [Test Bench (main) ] detected rects: 223 204 149 149
+ [Test Bench (main) ] detected rects: 229 204 149 149
+ [Test Bench (main) ] detected rects: 223 211 149 149
+ [Test Bench (main) ] detected rects: 208 186 178 178
+ [Test Bench (main) ] detected rects: 193 193 178 178
+ [Test Bench (main) ] detected rects: 201 193 178 178
+ [Test Bench (main) ] detected rects: 208 193 178 178
+ [Test Bench (main) ] detected rects: 193 201 178 178
+ [Test Bench (main) ] detected rects: 178 178 214 214
+ [Test Bench (main) ] detected rects: 187 178 214 214
+ [Test Bench (main) ] detected rects: 196 178 214 214
+ [Test Bench (main) ] detected rects: 205 178 214 214
+ [Test Bench (main) ] detected rects: 187 187 214 214
+ [Test Bench (main) ] detected rects: 196 187 214 214
+ [Test Bench (main) ] detected rects: 205 187 214 214
+-- saving output image [Start] --
+
+-- saving output image [Done] --
+DURATION: 5.773598INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:09; Allocated memory: 0.195 MB.
+INFO: [HLS 200-112] Total CPU user time: 11.5 seconds. Total CPU system time: 0.51 seconds. Total elapsed time: 11.93 seconds; peak allocated memory: 312.652 MB.

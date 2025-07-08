@@ -1,0 +1,148 @@
+<design_size title="Design Size Report">
+    <item name="C-Synthesis has not completed!">
+        <item name="Performance"/>
+        <item name="HW Transforms"/>
+    </item>
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 29486, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 56859, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 26323, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 26115, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 24522, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 26887, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 24973, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 24973, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 24973, apply array reshape pragmas</column>
+            <column name="">, , </column>
+            <column name="Performance">, pending, After transformations are applied to meet performance pragma targets</column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="5" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct"/>
+            <rows>
+                <row id="0" col0="detectFaces" col1="haar.cpp:2749" col2="29486" col3="24522" col4="24973">
+                    <row id="22" col0="myRound" col1="haar.cpp:2740" col2="4286" col2_disp="4,286 (2 calls)" col3="" col4=""/>
+                    <row id="58" col0="imageScaler" col1="haar.cpp:3321" col2="42" col3="" col4=""/>
+                    <row id="12" col0="processImage" col1="haar.cpp:2848" col2="20709" col3="24316" col4="24772">
+                        <row id="62" col0="cascadeClassifier" col1="haar.cpp:3021" col2="14427" col3="" col4="">
+                            <row id="9" col0="int_sqrt" col1="haar.cpp:3358" col2="261" col3="" col4=""/>
+                            <row id="2" col0="classifier0" col1="haar.cpp:1031" col2="126" col3="" col4=""/>
+                            <row id="43" col0="classifier1" col1="haar.cpp:1063" col2="126" col3="" col4=""/>
+                            <row id="63" col0="classifier2" col1="haar.cpp:1095" col2="126" col3="" col4=""/>
+                            <row id="65" col0="classifier3" col1="haar.cpp:1127" col2="126" col3="" col4=""/>
+                            <row id="61" col0="classifier4" col1="haar.cpp:1159" col2="126" col3="" col4=""/>
+                            <row id="72" col0="classifier5" col1="haar.cpp:1191" col2="126" col3="" col4=""/>
+                            <row id="75" col0="classifier6" col1="haar.cpp:1223" col2="126" col3="" col4=""/>
+                            <row id="67" col0="classifier7" col1="haar.cpp:1255" col2="126" col3="" col4=""/>
+                            <row id="92" col0="classifier8" col1="haar.cpp:1287" col2="126" col3="" col4=""/>
+                            <row id="86" col0="classifier9" col1="haar.cpp:1320" col2="126" col3="" col4=""/>
+                            <row id="89" col0="classifier10" col1="haar.cpp:1352" col2="126" col3="" col4=""/>
+                            <row id="79" col0="classifier11" col1="haar.cpp:1384" col2="126" col3="" col4=""/>
+                            <row id="83" col0="classifier12" col1="haar.cpp:1416" col2="126" col3="" col4=""/>
+                            <row id="6" col0="classifier13" col1="haar.cpp:1448" col2="126" col3="" col4=""/>
+                            <row id="98" col0="classifier14" col1="haar.cpp:1480" col2="126" col3="" col4=""/>
+                            <row id="3" col0="classifier15" col1="haar.cpp:1512" col2="126" col3="" col4=""/>
+                            <row id="70" col0="classifier16" col1="haar.cpp:1544" col2="126" col3="" col4=""/>
+                            <row id="96" col0="classifier17" col1="haar.cpp:1576" col2="126" col3="" col4=""/>
+                            <row id="10" col0="classifier18" col1="haar.cpp:1608" col2="126" col3="" col4=""/>
+                            <row id="16" col0="classifier19" col1="haar.cpp:1640" col2="126" col3="" col4=""/>
+                            <row id="1" col0="classifier20" col1="haar.cpp:1672" col2="126" col3="" col4=""/>
+                            <row id="23" col0="classifier21" col1="haar.cpp:1704" col2="126" col3="" col4=""/>
+                            <row id="21" col0="classifier22" col1="haar.cpp:1736" col2="126" col3="" col4=""/>
+                            <row id="17" col0="classifier23" col1="haar.cpp:1768" col2="126" col3="" col4=""/>
+                            <row id="38" col0="classifier24" col1="haar.cpp:1800" col2="126" col3="" col4=""/>
+                            <row id="34" col0="classifier25" col1="haar.cpp:1832" col2="126" col3="" col4=""/>
+                            <row id="33" col0="classifier26" col1="haar.cpp:1864" col2="126" col3="" col4=""/>
+                            <row id="31" col0="classifier27" col1="haar.cpp:1896" col2="126" col3="" col4=""/>
+                            <row id="29" col0="classifier28" col1="haar.cpp:1928" col2="126" col3="" col4=""/>
+                            <row id="51" col0="classifier29" col1="haar.cpp:1960" col2="126" col3="" col4=""/>
+                            <row id="49" col0="classifier30" col1="haar.cpp:1992" col2="126" col3="" col4=""/>
+                            <row id="46" col0="classifier31" col1="haar.cpp:2024" col2="126" col3="" col4=""/>
+                            <row id="44" col0="classifier32" col1="haar.cpp:2056" col2="126" col3="" col4=""/>
+                            <row id="41" col0="classifier33" col1="haar.cpp:2088" col2="126" col3="" col4=""/>
+                            <row id="68" col0="classifier34" col1="haar.cpp:2120" col2="126" col3="" col4=""/>
+                            <row id="71" col0="classifier35" col1="haar.cpp:2152" col2="166" col3="" col4=""/>
+                            <row id="74" col0="classifier36" col1="haar.cpp:2184" col2="126" col3="" col4=""/>
+                            <row id="77" col0="classifier37" col1="haar.cpp:2216" col2="126" col3="" col4=""/>
+                            <row id="57" col0="classifier38" col1="haar.cpp:2248" col2="126" col3="" col4=""/>
+                            <row id="64" col0="classifier39" col1="haar.cpp:2280" col2="126" col3="" col4=""/>
+                            <row id="93" col0="classifier40" col1="haar.cpp:2312" col2="126" col3="" col4=""/>
+                            <row id="95" col0="classifier41" col1="haar.cpp:2344" col2="126" col3="" col4=""/>
+                            <row id="100" col0="classifier42" col1="haar.cpp:2376" col2="126" col3="" col4=""/>
+                            <row id="4" col0="classifier43" col1="haar.cpp:2408" col2="126" col3="" col4=""/>
+                            <row id="78" col0="classifier44" col1="haar.cpp:2440" col2="126" col3="" col4=""/>
+                            <row id="82" col0="classifier45" col1="haar.cpp:2472" col2="126" col3="" col4=""/>
+                            <row id="85" col0="classifier46" col1="haar.cpp:2504" col2="126" col3="" col4=""/>
+                            <row id="88" col0="classifier47" col1="haar.cpp:2536" col2="126" col3="" col4=""/>
+                            <row id="90" col0="classifier48" col1="haar.cpp:2568" col2="166" col3="" col4=""/>
+                            <row id="13" col0="classifier49" col1="haar.cpp:2600" col2="126" col3="" col4=""/>
+                            <row id="19" col0="classifier50" col1="haar.cpp:2632" col2="126" col3="" col4=""/>
+                            <row id="15" col0="classifier51" col1="haar.cpp:2664" col2="126" col3="" col4=""/>
+                            <row id="69" col0="get_all_data" col1="haar.cpp:931" col2="4388" col3="" col4="">
+                                <row id="37" col0="get_bank" col1="haar.cpp:14" col2="28" col3="" col4=""/>
+                                <row id="52" col0="get_offset" col1="haar.cpp:19" col2="28" col3="" col4=""/>
+                                <row id="59" col0="get_data0" col1="haar.cpp:24" col2="120" col3="" col4=""/>
+                                <row id="60" col0="get_data1" col1="haar.cpp:58" col2="132" col3="" col4=""/>
+                                <row id="94" col0="get_data2" col1="haar.cpp:94" col2="144" col3="" col4=""/>
+                                <row id="97" col0="get_data3" col1="haar.cpp:133" col2="128" col3="" col4=""/>
+                                <row id="101" col0="get_data4" col1="haar.cpp:168" col2="120" col3="" col4=""/>
+                                <row id="5" col0="get_data5" col1="haar.cpp:201" col2="132" col3="" col4=""/>
+                                <row id="87" col0="get_data6" col1="haar.cpp:237" col2="124" col3="" col4=""/>
+                                <row id="81" col0="get_data7" col1="haar.cpp:270" col2="124" col3="" col4=""/>
+                                <row id="84" col0="get_data8" col1="haar.cpp:304" col2="32" col3="" col4=""/>
+                                <row id="18" col0="get_data9" col1="haar.cpp:315" col2="136" col3="" col4=""/>
+                                <row id="14" col0="get_data10" col1="haar.cpp:352" col2="108" col3="" col4=""/>
+                                <row id="24" col0="get_data11" col1="haar.cpp:382" col2="136" col3="" col4=""/>
+                                <row id="80" col0="get_data12" col1="haar.cpp:419" col2="128" col3="" col4=""/>
+                                <row id="47" col0="get_data13" col1="haar.cpp:454" col2="120" col3="" col4=""/>
+                                <row id="11" col0="get_data14" col1="haar.cpp:487" col2="120" col3="" col4=""/>
+                                <row id="7" col0="get_data15" col1="haar.cpp:520" col2="128" col3="" col4=""/>
+                                <row id="27" col0="get_data16" col1="haar.cpp:555" col2="120" col3="" col4=""/>
+                                <row id="55" col0="get_data17" col1="haar.cpp:588" col2="120" col3="" col4=""/>
+                                <row id="42" col0="get_data18" col1="haar.cpp:623" col2="128" col3="" col4=""/>
+                                <row id="39" col0="get_data19" col1="haar.cpp:657" col2="120" col3="" col4=""/>
+                                <row id="48" col0="get_data20" col1="haar.cpp:690" col2="128" col3="" col4=""/>
+                                <row id="45" col0="get_data21" col1="haar.cpp:725" col2="104" col3="" col4=""/>
+                                <row id="25" col0="get_data22" col1="haar.cpp:754" col2="124" col3="" col4=""/>
+                                <row id="28" col0="get_data23" col1="haar.cpp:788" col2="108" col3="" col4=""/>
+                                <row id="26" col0="get_data24" col1="haar.cpp:818" col2="112" col3="" col4=""/>
+                                <row id="73" col0="get_data25" col1="haar.cpp:849" col2="108" col3="" col4=""/>
+                                <row id="76" col0="get_data26" col1="haar.cpp:879" col2="96" col3="" col4=""/>
+                                <row id="66" col0="get_data27" col1="haar.cpp:906" col2="84" col3="" col4=""/>
+                            </row>
+                            <row id="54" col0="weakClassifier" col1="haar.cpp:3286" col2="1170" col3="" col4=""/>
+                        </row>
+                        <row id="22" col0="myRound" col1="haar.cpp:2740" col2="4286" col2_disp="4,286 (2 calls)" col3="" col4=""/>
+                        <row id="9" col0="int_sqrt" col1="haar.cpp:3358" col2="" col3="183" col4="183"/>
+                        <row id="60" col0="get_data1" col1="haar.cpp:58" col2="" col3="108" col4="82"/>
+                        <row id="94" col0="get_data2" col1="haar.cpp:94" col2="" col3="120" col4="91"/>
+                        <row id="97" col0="get_data3" col1="haar.cpp:133" col2="" col3="104" col4="79"/>
+                        <row id="5" col0="get_data5" col1="haar.cpp:201" col2="" col3="108" col4="82"/>
+                        <row id="18" col0="get_data9" col1="haar.cpp:315" col2="" col3="112" col4="85"/>
+                        <row id="24" col0="get_data11" col1="haar.cpp:382" col2="" col3="112" col4="85"/>
+                        <row id="80" col0="get_data12" col1="haar.cpp:419" col2="" col3="104" col4="79"/>
+                        <row id="7" col0="get_data15" col1="haar.cpp:520" col2="" col3="104" col4="79"/>
+                        <row id="42" col0="get_data18" col1="haar.cpp:623" col2="" col3="104" col4="79"/>
+                        <row id="48" col0="get_data20" col1="haar.cpp:690" col2="" col3="104" col4="79"/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

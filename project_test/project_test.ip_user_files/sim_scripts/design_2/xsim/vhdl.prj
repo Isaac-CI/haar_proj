@@ -1,0 +1,17 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_2/ip/design_2_rst_ps7_50M_0/sim/design_2_rst_ps7_50M_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_0_0/sim/design_2_axi_gpio_0_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_3_0/sim/design_2_axi_gpio_3_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_4_0/sim/design_2_axi_gpio_4_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_5_0/sim/design_2_axi_gpio_5_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_6_0/sim/design_2_axi_gpio_6_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_7_0/sim/design_2_axi_gpio_7_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_8_0/sim/design_2_axi_gpio_8_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_9_0/sim/design_2_axi_gpio_9_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_10_0/sim/design_2_axi_gpio_10_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_11_0/sim/design_2_axi_gpio_11_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_12_0/sim/design_2_axi_gpio_12_0.vhd" \
+"../../../bd/design_2/ip/design_2_axi_gpio_1_0/sim/design_2_axi_gpio_1_0.vhd" \
+
+# Do not sort compile order
+nosort
